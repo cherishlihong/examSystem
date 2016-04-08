@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+	<style type="text/css">@import url(css/reset.css);</style>
+	<style type="text/css">@import url(css/index.css);</style>
+	<script type = "text/javascript" src = "js/checkCode.js">  
+            </script>  
+</head>
+<body>
+	<div id="maincontent">
+		<div id="m_form">
+			<form action="http://www.baidu.com" method="post" onsubmit="return validate()">
+				<label>用户名：</label><input id="name" class="f_input" type="text"size="12"  /><br/><br/>
+
+				<label>密&nbsp;&nbsp;&nbsp;&nbsp;码：</label><input id="password" class="f_input" type="password" size="12" /><br/><br/>
+
+
+				 <input type = "button" id="code" onclick="createCode()"/>  
+				 &nbsp;<input type = "text" size="6" class="f_input" id = "input"/>  <br/><br/><br/>
+
+				<!--    <input type = "button" value = "验证" onclick = "validate()"/>   -->
+				<input  class="btn" type="submit" value="登录" >
+				<input  class="btn" type="reset" value="重置">
+			</form>
+		</div>
+	</div>
+</body>
+</html>
